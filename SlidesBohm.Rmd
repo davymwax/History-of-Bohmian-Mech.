@@ -116,7 +116,7 @@ Assume \textcolor{red}{realism} and \textcolor{red}{locality} hold.
 
 ***
 
-# Epistemic Probababilities and Statistical Quantum Theory
+# Epistemic Probabilities and Statistical Quantum Theory
 
 >- Sheldon Goldstein (2021), quotes Schrödinger (1935) as observing that:\bigskip\begin{quote} [T]he reigning doctrine rescues itself or us by having recourse to epistemology. We are told that no distinction is to be made between the state of a natural object and what I know about it, or perhaps better, what I can know about it if I go to some trouble. Actually—so they say—there is intrinsically only awareness, observation, measurement.\end{quote}
 
