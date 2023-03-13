@@ -1,0 +1,240 @@
+---
+title: "Historical Introduction to Bohm (1952)"
+author: "David Mwakima"
+date: "March 13th 2023"
+output: beamer_presentation 
+---
+
+# Quantum Theory of the Photoelectric Effect. Einstein (1905)
+
+>- Quantum theory of light, in which the energy of photons is quantized, explains the photoelectric effect.
+
+\[
+\boxed{E = hf}
+\]
+
+>- The first appearance of the Wave-Particle Duality.
+
+>- Wave-Particle Duality for \textbf{photons}.
+
+***
+
+# de Broglie Matter Wave Theory (Dissertation 1924)
+
+>- Starts as a hypothesis: Wave-Particle duality for \textbf{electrons}.
+
+\[
+\boxed{\lambda = \frac{h}{\vec{p}} = \frac{h}{m\vec{v}}}
+\]
+
+>- \textbf{Full} Wave-Particle Duality
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Particle concepts & Wave Concepts \\
+\hline
+Energy  & Frequency \\
+Momentum & Wavelength \\
+\hline
+\end{tabular}
+\end{center}
+
+>- Successfully explained the Bohr-Sommerfeld model of the atom. See Bacciagalupi (2017, 49 \& 51)
+
+***
+
+# The Classical Wave Equation
+
+>- Classically, there is a wave equation that describes the dynamics of any plane wave.
+
+\[
+\frac{\partial^2y(x, t)}{\partial x^2} = \frac{1}{v^2}\frac{\partial^2y(x, t)}{\partial t^2}
+\]
+
+>- Solutions of this wave equation are of the form\[y(x, t) = A\text{cos}(kx - \omega t)\]  
+
+>- Here $k = \frac{\omega}{v} = \frac{2\pi}{\lambda}$ is the \textcolor{red}{wave number} and $\omega = 2\pi f$ is the \textcolor{red}{angular frequency}
+
+>- What's the corresponding plane wave equation for matter waves if de Broglie's hypothesis is right?
+
+***
+
+# Schröndinger Wave Equation for Matter (1926)
+
+>- $\Psi(x, t)$ is the non-relativistic plane wave equation of a single particle that satisfies the Schröndinger Wave Equation:
+
+\[
+\boxed{
+\widehat{H} |\Psi(x, t)\rangle = i\hbar \frac{\partial}{\partial t}|\Psi(x, t)\rangle
+}
+\]
+
+where \[\widehat{H} = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + V(x, t)\] is the Hamiltonian, $\hbar$ is the reduced Planck constant $\frac{h}{2\pi}$ and $V(x, t)$ is the potential function. Compare Bacciagaluppi and Valentini (2017, 59 -- 60)
+
+>- Solving the \emph{time-independent} Schröndinger Wave Equation has the consequence that if $|\Psi(x, t_{0})\rangle_{S} = |\psi(x) \rangle_{S}$ is the state of system $S$ at time $t_{0}$, then $S$ has a determinate value of energy $E$ since $| \psi(x) \rangle_{S}$ is an eigenstate of the Hamiltonian acting on $|\Psi(x, t_{0}) \rangle_{S}$. (Special case of Eigenvalue-Eigenstate link)
+
+***
+
+# Max Born's Interpretation of the Wave Function (1926)
+
+>- $\Psi (x, t)$ is complex valued. Can we make measurements?
+
+>- The probability \[
+P(a < x < b) = \int_{a}^{b} | \Psi(x, t) |^2 dx
+\] of finding the particle within an interval $[a, b]$ in the $x$-axis \textbf{when a measurement} is made is the definite integral from $a$ to $b$ of the norm squared of wave function, i.e., the complex conjugate of $\Psi(x, t)$.
+
+>- If a system is in a superposition of energy states \[
+\Psi(x, t) = \sum_{n = 1}^{\infty} c_{n}\Psi_{n}(x, t) = \sum_{n = 1}^{\infty} c_{n}\psi_{n}(x)e^\frac{iE_{n}t}{\hbar}
+\], then \textbf{when a measurement is made}, the probability that a system is in energy state $E_{n}$ is $|c_{n}|^2$. This is a special case of rule 4.II in the standard collapse formulation of Quantum Mechanics.
+
+
+# Max Born's Interpretation of the Wave Function (1926)
+
+>- For a system in a superposition of energy states, the expectation value of position is:
+
+\[
+\langle x \rangle = \int_{-\infty}^{\infty} x | \Psi(x, t) |^2 dx
+\]
+
+>- The Wave Equation "lives" in $3N$ configuration space for a system with $N$ components, since the position of every component in the system requires 3 coordinates (x, y, z) in space.
+
+>- On this picture, the physical interpretation of the wave function in terms of \textcolor{red}{uncertainty} in \textbf{position} and \textbf{energy/momentum} (when a measurement is made) applies only to the single particle (electron) case.
+
+>- What is the meaning of $\Psi$ for the N particle case if $\Psi$ is in configuration space? (This point motivated de Broglie's no-collapse formulation of Quantum Mechanics)
+
+
+# Einstein-Podolsky-Rosen (EPR) 1935
+Assume \textcolor{red}{realism} and \textcolor{red}{locality} hold.
+
+>- \textcolor{red}{Realism}: Particles have determinate positions (and electrons have definite spins) prior to any measurement. (Compare Rule 3 of the Standard Formulation)
+
+- \textcolor{red}{Locality} (Einstein 1927 Solvay Congress): 
+    + Relativity of simultaneity. Two observers in inertial frames that are space-like separated can disagree on which events are simultaneous. Since there is no privileged inertial reference frame, there is no fact of the matter about whether two events are simultaneous.
+    + $c$ is the limiting velocity of the propagation of signals.
+
+>- \textcolor{red}{Incomplete}: If Born's interpretation is right, then the indeterminacy of quantum mechanics is "a matter of ignorance". In that case we need to find the "extra information" (the hidden variable) that, together with the wave-function, would enable us to predict with certainty the outcome of any experiment.
+
+***
+
+# Epistemic Probababilities and Statistical Quantum Theory
+
+>- Sheldon Goldstein (2021), quotes Schrödinger (1935) as observing that:\bigskip\begin{quote} [T]he reigning doctrine rescues itself or us by having recourse to epistemology. We are told that no distinction is to be made between the state of a natural object and what I know about it, or perhaps better, what I can know about it if I go to some trouble. Actually—so they say—there is intrinsically only awareness, observation, measurement.\end{quote}
+
+>-  Adding to "this most nearly obvious interpretation" (Einstein 1949: 672), Einstein is quoted by Goldstein as remarking that \bigskip \begin{quote} [T]he statistical quantum theory would \dots take an approximately analogous position to the statistical mechanics within the framework of classical mechanics. (Einstein 1949: 672)
+\end{quote}
+
+***
+
+# von Neumann (1932)
+
+>- Max Born's interpretation of the wave function was upheld in the standard formulation of Quantum Mechanics.
+
+>- In 1932, von Neumann published "a proof" that no deterministic theory could be compatible with quantum mechanics. 
+
+>- Is this a \textbf{no-go theorem} for "hidden variable" theories of Quantum Mechanics?
+
+# Reinterpretating the Wave Function?
+
+>- de Broglie's Pilot Wave Theory and later Bohmian mechanics can be understood as proposals to resolve the incompleteness problem of Quantum Mechanics in the EPR sense.
+
+>- In both, this involves formulating a deterministic theory of Quantum Mechanics -- no-collapse dynamics (Rule 4.II).
+
+>- And this, by implication (given the EPR argument), means rejecting Born's \textbf{interpretation} of the wave function and providing a different interpretation.
+
+>- Let's see how this works.
+
+# de Broglie Pilot Wave Theory (1927)
+
+>- Electrodynamics according to the Schröndinger Wave Equation works very well for electrons, which are \textcolor{red}{standing/stationary waves}.
+
+>- What are the solutions $\Psi(x, t)$ to the Schröndinger wave equation that can describe a \textcolor{red}{moving matter-wave}?
+
+>- Write the time-independent wave function as a Fourier transform 
+\[
+\psi(x) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} A(k)e^{ikx}dk
+\]
+
+>- Here the function $A(k)$ can be chosen to modulate the amplitude of the waves in the superposition depending on their wave number $k$.
+
+# de Broglie Pilot Wave Theory (1927)
+
+>- One can show that if we take real part of $\psi(x)$ for $A(k)$ defined in $[k_{0}-\Delta k, k_{0}+\Delta k]$ to be of the form: \[
+\bigg(\frac{1}{2\pi\alpha}\bigg)^\frac{1}{4}e^{-\frac{x^2}{4\alpha}}\,\text{cos}(k_{0}x)
+\] we obtain a \textcolor{red}{wave function localized} in space (wave packet). 
+>- This is the \textbf{pilot wave} described for the first time by de Broglie in the "Structure" paper from 1927 \textbf{before} the Solvay Conference paper later that year.\bigskip \begin{quote}[I]t is acceptable to adopt the following point of view: one will assume the existence, as distinct realities, of the material point and of the continuous wave represented by the function $\Psi$, and one will take it as a postulate that the motion of the point is determined as a function of the phase...One then conceives the continuous wave as guiding the motion of the particle. It is a pilot wave. Quoted from Bacciagaluppi and Valentini (2017, 71)\end{quote}
+
+***
+
+# de Broglie Pilot Wave Theory (1927)
+
+>- Compare with the solution to the classical wave equation $y(x, t_0) = A\text{cos}(kx + \omega t_{0})$.
+
+>- de Broglie took more seriously than Schröndinger the wave-particle duality for moving matter waves but at the cost of giving up the indeterminacy of the standard formulation of Quantum Mechanics when a measurement is made (Bacciagaluppi and Valentini (2017, 61)).
+
+>- Criticizing Schröndinger's work, de Broglie writes, "it seems a little paradoxical to construct a configuration space with coordinates of points that do not exist." Quoted in Bacciagaluppi and Valentini (2017, 76)
+
+***
+
+# de Broglie Pilot Wave Theory (1927)
+
+>- Here's a quote from Pauli's letter to Bohr dated 6th August 1927:\bigskip \begin{quote} In the last number of the Journal de Physique, a paper by de Broglie has appeared... de Broglie attempts here to reconcile the full determinism of physical processes with the dualism between waves and corpuscles...even if this paper by de Broglie is off the mark (and I hope that actually), still it is very rich in ideas and very sharp, and on a much higher level than the childish papers by Schröndinger, who even today still thinks he may abolish material points.\end{quote}
+
+***
+
+# de Broglie Pilot Wave Theory (1927)
+
+>- Recall that if we take real part of $\psi(x)$ for $A(k)$ defined in $[k_{0}-\Delta k, k_{0}+\Delta k]$ to be of the form: \[
+\bigg(\frac{1}{2\pi\alpha}\bigg)^\frac{1}{4}e^{-\frac{x^2}{4\alpha}}\,\text{cos}(k_{0}x)
+\] we obtain a \textcolor{red}{wave function localized} in space (wave packet).
+
+>- de Broglie goes (provisionally) \textbf{further}. Particles \textbf{are} moving \textcolor{red}{singularities} (regions of very high amplitude) of the wave packet.\footnote{He called the moving wave packet a \textbf{phase wave} (or \textbf{extended wave}). See Bacciagaluppi and Valentini (2017, 61ff, 82)}
+
+>- Why "singularities"?
+
+***
+# Heisenberg Uncertainty Principle (1927)
+
+>- The probability \begin{equation}\label{eq:1} |\Psi(x, t_{0})|^2 = \frac{1}{\sqrt{2\pi\alpha}}e^\frac{-x^2}{2\alpha}
+\end{equation} of finding the moving matter-wave in space at a given time $t_{0}$ is Gaussian. This means that the uncertainty in position $\Delta x$ is $\sqrt{\alpha}$
+
+>- Similarly if we choose $A(k)$ such that \[|A(k)|^2 = \bigg(\frac{2\alpha}{\pi}\bigg)^2e^{-\alpha(k - k_{0})^2} \] we see that this is again a Gaussian distribution such that the uncertainty in wave number $\Delta k = \frac{1}{2\sqrt{\alpha}}$
+
+>- But $k = \frac{p}{\hbar} = \frac{\sqrt{2mE}}{\hbar}$. So $\Delta x \hbar \Delta k = \sqrt{\alpha}\frac{\hbar}{2\sqrt{\alpha}}\geq \frac{\hbar}{2}$
+
+>- $\boxed{\Delta x \Delta p = \frac{\hbar}{2}}$ is the \textcolor{red}{Heisenberg Uncertainty Principle} 1927.
+
+***
+
+# General Uncertainty Principle 
+
+>- For a general amplitude modulating function $A(k)$ \[\boxed{\Delta x \Delta p \geq \frac{\hbar}{2}}\] where $\hbar$ is of the order of $10^{-34}$.
+
+>- Atomic masses are of the order of $10^{-27}$, while the electron mass is of the order of $10^{-31}$. At these scales, for small $\Delta v$, $\Delta x$ \textbf{in S.I units} is appreciably higher than $\Delta x$ at the macroscale.
+
+>- Similarly at the atomic scales of $10^{-15}$m, for small $\Delta v$, the uncertainty in $\Delta p$ \textbf{in S.I units} is appreciably higher than $\Delta p$ at the macroscale.
+
+>- One can take a different interpretation of the Heisenberg Uncertainty Principle based on the \textcolor{red}{principle of complementarity} due to Bohr (1927) in terms of non-commutativity of the Hermitian operators representing the two observables.
+
+***
+
+# de Broglie Pilot Wave Theory (1927)
+
+>- Take it as a postulate and regard $\Psi$ as a \textbf{physically-real} \textcolor{red}{pilot wave} guiding the motion of the \textbf{physically-real} particle according to the equation \begin{equation}\label{eq:2} \vec{v} \propto \nabla S \end{equation} where $S$ is the phase of $\Psi$. See Bacciagaluppi and Valentini (2017, 72, 76ff) 
+>- As quoted in Bacciagaluppi and Valentini(2017, 78)\bigskip\begin{quote} 
+In brief, in our hypotheses, each wave $\Psi$ determines a 'class of motions', and each one of these motions is governed by equation (\ref{eq:2}) when one knows the initial position of the corpuscle. If one ignores this initial position, then the formula (\ref{eq:1}) gives the probability for the presence of the corpuscle in the element of volume $d\tau$ at the instant $t$. The wave $\Psi$ then appears as both a \textbf{pilot wave} (Führungsfeld of Mr. Born) and a \textbf{probability wave}.\end{quote}
+
+***
+
+# de Broglie Pilot Wave Theory and Bohmian Mechanics
+
+>- Rather than interpret the $|\Psi|^2$ as the probability of \textbf{finding} the electron (or particle) \textbf{when a measurement} is made (Born's Rule), $|\Psi|^2$ is the probability of the electron (or particle) \textbf{being somewhere}. See Bacciagaluppi and Valentini (2017, 65ff.) 
+
+>- It is empirically adequate on one interpretation of the Heisenberg Uncertainty Principle and the interpretation of the wave function works in general for the $N$ particle system. See Bacciagaluppi and Valentini (2017, 79)
+
+>- For de Broglie (\ref{eq:2}) is the fundamental equation of motion. One can write the dynamics of a particle in classical relativistic terms provided one includes a variable proper mass. 
+
+>- In the non-relativistic limit an additional \textcolor{red}{quantum potential} is required. This was Bohm's proposal in the series of papers of 1952.
+
+***
+
+\begin{center} THANK YOU \end{center}
