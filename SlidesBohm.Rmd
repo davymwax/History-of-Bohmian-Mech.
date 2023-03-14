@@ -39,7 +39,7 @@ Momentum & Wavelength \\
 \end{tabular}
 \end{center}
 
->- Successfully explained the Bohr-Sommerfeld model of the atom. See Bacciagalupi (2017, 49 \& 51)
+>- Successfully explained the Bohr-Sommerfeld model of the atom. See Bacciagalupi and Valentini (2017, 49 \& 51)
 
 ***
 
